@@ -8,10 +8,10 @@
     <title>Baker & Roszczyk, LLC</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="/styles/bootstrap.css" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css" />
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="/styles/bootstrap-theme.min.css" />
-	<!-- link rel="stylesheet" href="/styles/jumbotron.css" -- />
+	<link rel="stylesheet" href="/styles/jumbotron.css" />
 	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,41 +21,29 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#"><img src="images/logo.png" height="120px" alt="Baker & Roszczyk" /></a>
-          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Baker & Roszczyk</a>
         </div>
-        <div class="navbar-nav">
-          <ul>
-          <li><a href="#">Home</a>
-          <li><a href="#">About</a>
-          <li><a href="#">Contact us</a>
-          </div>
+        <div id="navbar" class="navbar-collapse collapse">
+		</div><!--/.navbar-collapse -->
       </div>
     </nav>
-    
-    <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Project name</h3>
-      </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>It’s your turn to be heard.</h1>
-        <p>At Baker & Roszczyk, we never forget that you have a name. You deserve to be respected and understood by the attorney preparing your case. You deserve to be well represented in court or at the negotiating table. You deserve to be heard.</p>        
+        <p>At Baker & Roszczyk, we never forget that you have a name. You deserve to be respected and understood by the attorney preparing your case. You deserve to be well represented in court or at the negotiating table. You deserve to be heard.</p>
         
-        <p>Learn more about <a href="baker.html">Baker</a> & <a href="roszczyk.html">Roszczyk</a>.</p>
-        <p style="display:none;"><a class="btn btn-primary btn-lg" href="#people" role="button">Learn more &raquo;</a></p>
-        
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
@@ -65,7 +53,7 @@
         <div class="col-md-4">
 			<h2>We will listen to you. <br />We will be your voice.</h2>
 			<p>Baker & Roszczyk, Attorneys at Law, is an independent, full-service law firm with a combined 30 years of experience in:</p>
-			<ul class="list-unstyled">
+			<ul>
 				<li>White-collar, Criminal defense</li> 
 				<li>Personal Injury</li>
 				<li>Business </li>
@@ -118,9 +106,6 @@
 		</div>
       </div>
 	
-	<br />
-	<br />
-	<br />
 	
 	<!-- FOOTER -->
       <footer>
