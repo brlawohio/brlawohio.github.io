@@ -8,6 +8,9 @@
     <title>Baker & Roszczyk, LLC</title>
 
     <!-- Bootstrap -->
+    <!-- Bootstrap -->
+    <link href="/scripts/bootstrap.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="/styles/bootstrap.css" />
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="/styles/bootstrap-theme.min.css" />
@@ -30,9 +33,15 @@
 	    </div>
 	    <nav>
 	      <ul class="nav nav-pills pull-right">
-	          <li><a class="lead" href="#">Home</a></li>
-	          <li><a class="lead" href="#">About us</a></li>
-	          <li><a class="lead" href="#">Contact us</a></li>
+	        <li><a class="lead" href="#">Home</a></li>
+			<li role="presentation" class="dropdown">
+				<a class="lead" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Joseph Baker</a></li>
+					<li><a href="#">John Roszczyk</a></li>
+				</ul>
+			</li>
+	        <li><a class="lead" href="#">Contact us</a></li>
 	      </ul>
 	     </nav>
 	  </div>
