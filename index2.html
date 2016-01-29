@@ -133,5 +133,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="/scripts/bootstrap.min.js" />
+	<script type="text/javascript">
+	$(function(){
+		console.log("I am here");
+		var bgImage = (Math.floor(Math.random() * 2))+ ".JPG";
+		$('.jumbotron').css('background-image',"../images/carousel/"+bgImage);
+		});
+	</script>
   </body>
 </html>
