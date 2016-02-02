@@ -120,7 +120,7 @@
 			
 			<br>
 		
-		  <p><a class="btn btn-default" href="#" role="button">Contact us</a></p>
+		  <p><a class="btn btn-default" href="contact.html" role="button">Contact us</a></p>
 		</div>
       </div>
 	
@@ -151,11 +151,14 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="/scripts/bootstrap.min.js" />
 	<script type="text/javascript">
-	$(function(){
-		console.log("I am here");
-		var bgImage = (Math.floor(Math.random() * 2))+ ".JPG";
-		$('.jumbotron').css('background-image',"../images/carousel/"+bgImage);
-		});
+	(function ($) {
+	
+	    $(function () { //On load
+			console.log("I am here");
+			var bgImage = (Math.floor(Math.random() * 2))+ ".JPG";
+			$('.jumbotron').css('background-image',"../images/carousel/"+bgImage);
+	    });
+	})(jQuery);
 	</script>
   </body>
 </html>
