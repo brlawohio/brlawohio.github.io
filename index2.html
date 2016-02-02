@@ -146,13 +146,15 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="/scripts/bootstrap.min.js" />
+	<script src="/scripts/bootstrap.min.js"></script>
 	<script type="text/javascript">
 	(function ($) {
 	    $(function () { //On load
-			console.log("I am here");
-			var bgImage = (Math.floor(Math.random() * 2))+ ".JPG";
-			$('.jumbotron').css('background-image',"../images/carousel/"+bgImage);
+			var min = 1;
+			var max = 2;
+			var imgId = Math.floor(Math.random() * (max - min + 1)) + min;
+			var fileName = imgId + ".JPG";
+			$('.jumbotron').css('background-image', 'url("' + "/images/carousel/" + fileName + '")');
 	    });
 	})(jQuery);
 	</script>
