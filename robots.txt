@@ -1,0 +1,8 @@
+User-agent: *   # directed to all spiders
+Allow: /
+
+User-agent: gsa-crawler
+Allow: /
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /fonts/
